@@ -1,4 +1,5 @@
 body {
+	--font-text-theme: Georgia, serif;
 	--radius-s: 0px;
 	--radius-m: 0px;
 	--radius-l: 0px;
@@ -8,6 +9,7 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
+	--ribbon-background: #8c8e79;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
@@ -31,4 +33,24 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+	--background-primary: #a1a38d;
+	--background-secondary: #8c8e79;
+	--text-normal: #000000;
+}
+
+.theme-light {
+	--background-primary: #dbddcd;
+	--background-secondary: #cfd0bf;
+}
+
+:root {
+	--input-focus-border-color: Highlight;
+	--input-focus-outline: 1px solid Canvas;
+	--input-unfocused-border-color: transparent;
+	--input-disabled-border-color: transparent;
+	--input-hover-border-color: red;
+	/* Default Input Variables for Root */
 }
